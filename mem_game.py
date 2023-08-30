@@ -222,15 +222,17 @@ def play(m, pl_one, pl_two):
         guess = m.check_if_guessed(m.board, guess[0], guess[1], turn)
 
 
-
-
-
 if __name__ == '__main__':
     player_1 = HumanPlayer("Ema")
     player_2 = HumanPlayer('Marti')
     mem = Memory()
     play(mem, player_1, player_2)
     print(mem.nums == mem.board)
+
+# TODO game not ending when all are guessed
+
+
+
 
 
 # mem = Memory()
